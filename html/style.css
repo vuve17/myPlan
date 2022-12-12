@@ -1,0 +1,178 @@
+body{
+    display: block;
+    font-family:'Roboto', 'Courier', 'monospace'; 
+}
+
+.light_blue{
+    color: rgb(69,181,230);
+}
+
+.dark_blue{
+    color: rgb(0, 129, 209);
+}
+
+.heading{
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+}
+
+
+
+#blure_div_on_open_nav{
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 20%;
+    visibility: hidden;
+    
+}
+
+
+#content{
+    background-color:  rgb(0, 129, 209);
+}
+
+@media (max-width: 768px ) {
+    .home_page.container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.5vh;
+        /* border: 2px black solid; */
+        justify-content: space-between;
+    }
+}
+
+.wrapper {
+    position: relative;
+    z-index: 10;
+    display:flex;
+    align-items: center;
+    position: fixed;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar {
+    position: fixed;
+    margin-left: -250px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background:  rgb(0, 129, 209);
+    width: 100%;
+}
+
+#sidebar.active {
+    transition: all 0.5s ease;
+    margin-left: 0px;
+}
+
+#sidebar{
+    transition: all 0.5s ease;
+    z-index: 10;
+    position: sticky;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+ul.components{
+    padding-top: 3vh;
+}
+
+ul.components li{
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+ul.components li a{
+    color: white;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+}
+
+
+.welcome_p a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p_body{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.welcome_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:inherit;
+    left: 5vh;
+    align-self: center;
+}
+
+
+.calendar_character{
+    align-self: center;
+}
+
+
+
+#log_in_register_div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#log_in_btn{
+    background-color: rgb(0, 129, 209);
+    border-radius: 0.8vh ;
+    padding: 0.5vh;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#log_in_btn:hover, #register_btn:hover{
+    text-decoration: underline;
+}
+
+#register_btn{
+    padding-top: 0.5vh;
+}
+
+.home_page.container{
+    display: flex;
+    margin-top: 2.5vh;
+    /* border: 2px black solid; */
+    justify-content: space-between;
+}
